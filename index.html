@@ -9,14 +9,15 @@
 <body>
     <h1>Lista de Compras</h1>  
     <label for="item">Informe o produto</label>
-    <input type="text">
-    <label for="valor">Informe o produto</label>
-    <input type="tnumber">
-    <button>Adicionar Produto</button>
+    <input type="text" data-nome-produto required>
+    <label for="valor" >Informe o produto</label>
+    <input type="number" data-valor-produto required>
+    <button data-botao>Adicionar Produto</button>
 
-    <ul>
+    <ul data-lista-produto>
         <li>Produto 1</li>
         <li>Valor produto 2</li>
     </ul>
 </body>
+<script src="../somador_lista_de_compas/main.js"></script>
 </html>
