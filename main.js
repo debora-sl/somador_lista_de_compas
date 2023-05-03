@@ -14,12 +14,28 @@ botao.addEventListener('click', ()=>{
 
     //pegando a lista de produtos e adiocinando o nome e valor do produto digitados pelos usuário
     const listaDeProdutos = document.querySelector('[data-lista-produto]');
+
     const novoProduto = document.createElement('li');
     novoProduto.innerHTML = nomeDoProduto;
-
     const novoValorDoProduto = document.createElement('li');
-    novoValorDoProduto.innerText= valorDoProduto;
-    const valorProdutoConvertido = parseInt(novoValorDoProduto);
+    novoValorDoProduto.innerHTML = valorDoProduto;
+
+    listaDeProdutos.appendChild(novoProduto);
+    listaDeProdutos.appendChild(novoValorDoProduto);
+
+    const arr = [];
+    arr.push(novoValorDoProduto.textContent);
+    const soma = 0;
+    for (let novoValorDoProduto = 0; novoValorDoProduto < arr.length; novoValorDoProduto++) {
+        novoValorDoProduto += arr[novoValorDoProduto];
+        console.log(arr);
+    }
+
+
+    inputNomeDoProduto.value = "";
+    inputValorDoProduto.value = "";
+
+
 
 
 });
