@@ -9,9 +9,6 @@ botao.addEventListener('click', ()=>{
     const inputValorDoProduto = document.querySelector('[data-valor-produto]');
     const valorDoProduto = inputValorDoProduto.value;
 
-    console.log(nomeDoProduto);
-    console.log(valorDoProduto);
-
     //pegando a lista de produtos e adiocinando o nome e valor do produto digitados pelos usuário
     const listaDeProdutos = document.querySelector('[data-lista-produto]');
 
@@ -19,7 +16,6 @@ botao.addEventListener('click', ()=>{
     novoProduto.innerHTML = nomeDoProduto;
     const novoValorDoProduto = document.createElement('li');
     novoValorDoProduto.innerHTML = valorDoProduto;
-
     listaDeProdutos.appendChild(novoProduto);
     listaDeProdutos.appendChild(novoValorDoProduto);
 
@@ -28,7 +24,9 @@ botao.addEventListener('click', ()=>{
     const soma = 0;
     for (let novoValorDoProduto = 0; novoValorDoProduto < arr.length; novoValorDoProduto++) {
         novoValorDoProduto += arr[novoValorDoProduto];
-        console.log(arr);
+        
+        
+
     }
 
 
