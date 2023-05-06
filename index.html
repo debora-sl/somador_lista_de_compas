@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../somador_lista_de_compas/style.css">
     <title>Somador Lista de Compras</title>
 </head>
 <body>
-    <h1>Lista de Compras</h1>  
-    <label for="item">Informe o produto</label>
-    <input type="text" data-nome-produto required>
-    <label for="valor" >Informe o produto</label>
-    <input type="number" data-valor-produto required>
-    <button data-botao>Adicionar Produto</button>
+    <main class="principal">
+        <div class="cabecalho">
+            <h1 class="titulo">Lista de Compras</h1> 
+        </div>
 
-    <ul data-lista-produto>
-        <li>Produto 1</li>
-        <li>Valor produto 2</li>
-    </ul>
+        <div class="area__de__inputs">
+            <label for="item" class="label__texto">Informe o produto</label>
+            <input type="text" class="input" data-nome-produto required>
+            <label for="valor" class="label__texto">Informe o produto</label>
+            <input type="number" class="input" data-valor-produto required>
+            <button data-botao>Adicionar Produto</button>            
+        </div>
+
+    
+        <ul data-lista-produto>
+            <li>Produto 1</li>
+            <li>Valor produto 2</li>
+        </ul>
+    </main>
+
 </body>
 <script src="../somador_lista_de_compas/main.js"></script>
 </html>

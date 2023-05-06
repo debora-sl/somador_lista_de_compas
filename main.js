@@ -1,4 +1,4 @@
-console.log("Esta um lindo dia para codar!");
+
 
 
 const botao = document.querySelector('[data-botao]');
@@ -18,16 +18,6 @@ botao.addEventListener('click', ()=>{
     novoValorDoProduto.innerHTML = valorDoProduto;
     listaDeProdutos.appendChild(novoProduto);
     listaDeProdutos.appendChild(novoValorDoProduto);
-
-    const arr = [];
-    arr.push(novoValorDoProduto.textContent);
-    const soma = 0;
-    for (let novoValorDoProduto = 0; novoValorDoProduto < arr.length; novoValorDoProduto++) {
-        novoValorDoProduto += arr[novoValorDoProduto];
-        
-        
-
-    }
 
 
     inputNomeDoProduto.value = "";
