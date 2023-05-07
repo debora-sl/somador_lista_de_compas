@@ -19,17 +19,19 @@
             <input type="text" class="principal__area-de-inputs__input" data-nome-produto required>
             <label for="valor" class="principal__area-de-inputs__texto">Informe o Valor do Produto</label>
             <input type="number" class="principal__area-de-inputs__input" data-valor-produto required>
-            <button data-botao class="principal__botao">Adicionar Produto</button>            
+            <button class="principal__botao" data-botao>Adicionar Produto</button>            
         </div>
 
         <div>
-            <ul data-lista-produto class="principal__lista">
-                <div class="principal__lista__produto">
-                    <li class="principal__lista__produto__nome">Suco</li>
-                    <li class="principal__lista__produto__valor">2,00</li>
+            <ul class="principal__lista" data-lista-produto>
+                <div class="principal__lista__produto" data-div-produtos>
+                    <li class="principal__lista__produto__nome" data-lista-nome>Suco</li>
+                    <li class="principal__lista__produto__valor" data-lista-valor>10,00</li>
                 </div>
             </ul>
         </div>
+
+        <div class="principal__total" data-total></div>
     </main>
 
 </body>
