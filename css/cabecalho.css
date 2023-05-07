@@ -1,0 +1,11 @@
+.cabecalho{
+    background:  #c2b0b0;
+    padding: 10px;
+    width: 100%;
+}
+
+.cabecalho__titulo{
+    color: #a84a4a;
+    font-size: 3em;
+    text-align: center;
+}

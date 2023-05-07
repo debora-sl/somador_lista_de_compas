@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../somador_lista_de_compas/css/reset.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../somador_lista_de_compas/style.css">
+    <link rel="stylesheet" href="../somador_lista_de_compas/css/cabecalho.css">
+    <link rel="stylesheet" href="../somador_lista_de_compas/css/style.css">
     <title>Somador Lista de Compras</title>
 </head>
 <body>
+    <div class="cabecalho">
+        <h1 class="cabecalho__titulo">Lista de Compras</h1> 
+    </div>
     <main class="principal">
-        <div class="cabecalho">
-            <h1 class="titulo">Lista de Compras</h1> 
+        <div class="principal__area-de-inputs">
+            <label for="item" class="principal__area-de-inputs__texto">Informe o Produto</label>
+            <input type="text" class="principal__area-de-inputs__input" data-nome-produto required>
+            <label for="valor" class="principal__area-de-inputs__texto">Informe o Valor do Produto</label>
+            <input type="number" class="principal__area-de-inputs__input" data-valor-produto required>
+            <button data-botao class="principal__botao">Adicionar Produto</button>            
         </div>
 
-        <div class="area__de__inputs">
-            <label for="item" class="label__texto">Informe o produto</label>
-            <input type="text" class="input" data-nome-produto required>
-            <label for="valor" class="label__texto">Informe o produto</label>
-            <input type="number" class="input" data-valor-produto required>
-            <button data-botao>Adicionar Produto</button>            
+        <div>
+            <ul data-lista-produto class="principal__lista">
+                <div class="principal__lista__produto">
+                    <li class="principal__lista__produto__nome">Suco</li>
+                    <li class="principal__lista__produto__valor">2,00</li>
+                </div>
+            </ul>
         </div>
-
-    
-        <ul data-lista-produto>
-            <li>Produto 1</li>
-            <li>Valor produto 2</li>
-        </ul>
     </main>
 
 </body>
