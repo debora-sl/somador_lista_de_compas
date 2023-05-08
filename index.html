@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../somador_lista_de_compas/css/reset.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../somador_lista_de_compas/css/reset.css"> 
+    <link rel="stylesheet" href="../somador_lista_de_compas/css/corpo.css">
     <link rel="stylesheet" href="../somador_lista_de_compas/css/cabecalho.css">
     <link rel="stylesheet" href="../somador_lista_de_compas/css/style.css">
+    <link rel="stylesheet" href="../somador_lista_de_compas/css/rodape.css">
     <title>Somador Lista de Compras</title>
 </head>
-<body>
+<body class="corpo">
     <div class="cabecalho">
         <h1 class="cabecalho__titulo">Lista de Compras</h1> 
     </div>
@@ -22,18 +25,18 @@
             <button class="principal__botao" data-botao>Adicionar Produto</button>            
         </div>
 
-        <div>
+        <div class="principal__total" data-total>Total R$: 0,00</div>
+
+        <div class="principal__div__lista">
+            <h2 class="principal__titulo-lista">Lista de Produtos e Valores:</h2>
             <ul class="principal__lista" data-lista-produto>
-                <div class="principal__lista__produto" data-div-produtos>
-                    <li class="principal__lista__produto__nome" data-lista-nome>Suco</li>
-                    <li class="principal__lista__produto__valor" data-lista-valor>10,00</li>
-                </div>
+
             </ul>
         </div>
 
-        <div class="principal__total" data-total></div>
-    </main>
 
+    </main>
+    <footer class="rodape">Debora Dev Front-End</footer>
 </body>
 <script src="../somador_lista_de_compas/main.js"></script>
 </html>

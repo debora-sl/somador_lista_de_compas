@@ -9,3 +9,19 @@
     font-size: 3em;
     text-align: center;
 }
+
+/*@media screen and (max-width: 600px){
+    .cabecalho__titulo{
+        color: #a84a4a;
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .cabecalho__titulo{
+        color: #a84a4a;
+        font-size: 2em;
+        text-align: center;
+    }
+}*/

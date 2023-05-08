@@ -1,0 +1,6 @@
+.corpo{
+    background: #221414;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}

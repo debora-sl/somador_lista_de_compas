@@ -2,7 +2,7 @@
 const lista = document.querySelector('[data-lista-produto]');
 
 //criando o array de produtos
-const valores = [];
+const produtos = [];
 
 //Pegando o botão
 const botao = document.querySelector('[data-botao]');
@@ -11,10 +11,26 @@ botao.addEventListener('click', ()=>{
     const inputNome = document.querySelector('[data-nome-produto]');
     const nome = inputNome.value;
     const inputValor = document.querySelector('[data-valor-produto]');
-    const valor = parseFloat(inputValor.value);
-  
+    const valor = Number(inputValor.value);
+    console.log(typeof valor);
+
+
     criaProduto(nome, valor);
 
+    //criando objeto para somar os valores
+    produtos.push({
+        nome: nome,
+        valor: valor
+    });
+    //Somando os valores que estão dentro do array
+    var somaValores = 0;
+    for (let i = 0; i < produtos.length; i++) {
+        somaValores += produtos[i].valor;
+        
+    }
+
+    const totalCompras = document.querySelector('[data-total]');
+    totalCompras.textContent =`Total R$: ${somaValores.toFixed(2)}`; 
 
     inputNome.value = "";
     inputValor.value = "";
@@ -32,7 +48,7 @@ function criaProduto(nome, valor) {
     novoNomeDoProduto.classList.add("principal__lista__produto__nome");
 
     const novoValorDoProduto = document.createElement('li');
-    novoValorDoProduto.innerHTML = valor;
+    novoValorDoProduto.textContent = valor.toFixed(2);
     novoValorDoProduto.classList.add("principal__lista__produto__valor");
     console.log(novoValorDoProduto);
 
@@ -44,13 +60,4 @@ function criaProduto(nome, valor) {
     lista.appendChild(novoProduto);
     lista.classList.add("principal__lista");
     
-    valores.push(novoValorDoProduto);
-    var somaValores = 0;
-    for (let i = 0; i < valores.length; i++) {
-        somaValores += valores[i];
-        
-    }
-  
-    const totalCompras = document.querySelector('[data-total]');
-    totalCompras.innerHTML = somaValores;
 };

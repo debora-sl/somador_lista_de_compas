@@ -1,0 +1,9 @@
+.rodape{
+    border: thin solid #f10e0e;
+    color: #cebfbf;
+    font-size: 1em;
+    margin-top: 10em;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
